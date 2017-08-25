@@ -3,6 +3,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class CoinsTest {
+	
 	public Coins createUnderTest() {
 		return new Coins();
 	}
@@ -23,5 +24,13 @@ public class CoinsTest {
 	@Test 
 	public void ifCoinEnteredIsAPennyReturnNotValid() {
 		assertFalse(createUnderTest().isPenny());
+	}
+	@Test
+	public void ifNoCoinsAreEnteredDisplayInsertCoin() {
+		assertEquals(createUnderTest().getDisplay(), "INSERT COIN");
+	}
+	@Test
+	public void insertNickleDisplaySaysFiveCents() {
+		assertEquals(createUnderTest().getDisplay("0.05"), 0.05);
 	}
 }
