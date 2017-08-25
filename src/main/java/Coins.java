@@ -23,4 +23,8 @@ public class Coins {
 		return false;
 	}
 
+	public String getDisplay() {
+		return "INSERT COIN";
+	}
+
 }

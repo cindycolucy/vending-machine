@@ -25,10 +25,10 @@ public class CoinsTest {
 	public void ifCoinEnteredIsAPennyReturnNotValid() {
 		assertFalse(createUnderTest().isPenny());
 	}
-//	@Test
-//	public void ifNoCoinsAreEnteredDisplayInsertCoin() {
-//		assertEquals(createUnderTest().getDisplay(), "INSERT COIN");
-//	}
+	@Test
+	public void ifNoCoinsAreEnteredDisplayInsertCoin() {
+		assertEquals(createUnderTest().getDisplay(), "INSERT COIN");
+	}
 //	@Test
 //	public void insertNickleDisplaySaysFiveCents() {
 //		assertEquals(createUnderTest().getDisplay(0.05), 0.05);
