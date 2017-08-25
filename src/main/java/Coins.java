@@ -25,7 +25,7 @@ public class Coins {
 		return false;
 	}
 
-	public String getDisplay() {
+	public String getDisplay(double d) {
 		if (totalMoney == 0.0) {
 			return "INSERT COIN";
 		}
