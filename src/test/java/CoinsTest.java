@@ -31,6 +31,6 @@ public class CoinsTest {
 	}
 	@Test
 	public void insertNickleDisplaySaysFiveCents() {
-		assertEquals(createUnderTest().getDisplay("0.05"), 0.05);
+		assertEquals(createUnderTest().getDisplay(), 0.05);
 	}
 }
