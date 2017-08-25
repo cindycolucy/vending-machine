@@ -5,7 +5,8 @@ public class Coins {
 	private String dime;
 	private String quarter;
 	private String penny;
-
+	private Double totalMoney;
+	private String input;
 
 	public boolean isNickel() {
 		return true;
@@ -23,8 +24,12 @@ public class Coins {
 		return false;
 	}
 
-	public String getDisplay() {
+	public String getDisplay(Double totalMoney) {
+		if(input == "nickel") {
+			totalMoney += 0.05;
+		}
 		return "INSERT COIN";
 	}
+	
 
 }
